@@ -47,7 +47,9 @@ ActiveRecord::Schema.define(version: 2023_02_22_135621) do
     t.string "theme"
     t.float "price"
     t.boolean "family_friendly"
-    t.datetime "opening_time"
+    t.datetime "opening_date"
+    t.datetime "closing_date"
+    t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
